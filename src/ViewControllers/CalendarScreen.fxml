@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="521.0" prefWidth="759.0" style="-fx-background-color: #f5f9ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewControllers.CalendarScreenController">
+   <children>
+      <TableView fx:id="tableAppointments" layoutX="14.0" layoutY="175.0" prefHeight="219.0" prefWidth="730.0">
+         <columns>
+            <TableColumn fx:id="customerCol" prefWidth="75.0" text="Customer" />
+            <TableColumn fx:id="titleCol" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="descriptionCol" prefWidth="75.0" text="Description" />
+            <TableColumn fx:id="locationCol" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="contactCol" prefWidth="75.0" text="Contact" />
+            <TableColumn fx:id="typeCol" prefWidth="75.0" text="Type" />
+            <TableColumn fx:id="startCol" prefWidth="143.0" text="Start" />
+            <TableColumn fx:id="endCol" prefWidth="136.0" text="End" />
+         </columns>
+      </TableView>
+      <Button layoutX="53.0" layoutY="422.0" mnemonicParsing="false" onAction="#addAppHandler" text="Add App">
+         <font>
+            <Font name="Lora Regular" size="13.0" />
+         </font></Button>
+      <Button layoutX="131.0" layoutY="422.0" mnemonicParsing="false" onAction="#deleteAppHandler" text="Delete App">
+         <font>
+            <Font name="Lora Regular" size="13.0" />
+         </font></Button>
+      <Button layoutX="225.0" layoutY="422.0" mnemonicParsing="false" onAction="#updateAppHandler" text="Update App">
+         <font>
+            <Font name="Lora Regular" size="13.0" />
+         </font></Button>
+      <Label fx:id="weekText" layoutX="280.0" layoutY="115.0" />
+      <Label fx:id="monthText" layoutX="331.0" layoutY="115.0" />
+      <Button layoutX="548.0" layoutY="134.0" mnemonicParsing="false" onAction="#customerHandler" text="Customer">
+         <font>
+            <Font name="Lora Regular" size="13.0" />
+         </font></Button>
+      <Label layoutX="309.0" layoutY="69.0" prefHeight="41.0" prefWidth="155.0" text="Appointments" textFill="#171616">
+         <font>
+            <Font name="Merriweather" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="584.0" layoutY="422.0" mnemonicParsing="false" onAction="#refreshHandler" text="Refresh">
+         <font>
+            <Font name="Lora Regular" size="13.0" />
+         </font></Button>
+      <Button layoutX="646.0" layoutY="135.0" mnemonicParsing="false" onAction="#reportsHandler" text="Reports">
+         <font>
+            <Font name="Lora Regular" size="13.0" />
+         </font></Button>
+      <Button fx:id="monthButton" layoutX="77.0" layoutY="134.0" mnemonicParsing="false" onAction="#monthHandler" text="Month">
+         <font>
+            <Font name="Lora Regular" size="13.0" />
+         </font></Button>
+      <Button fx:id="weekButton" layoutX="152.0" layoutY="134.0" mnemonicParsing="false" onAction="#weekHandler" text="Week">
+         <font>
+            <Font name="Lora Regular" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
