@@ -6,7 +6,7 @@
 package schedulingprojectmichaelaruiz;
 
 
-import Model.Inventory;
+//import Model.Inventory;
 import java.sql.SQLException;
 import java.util.Locale;
 import java.util.ResourceBundle;

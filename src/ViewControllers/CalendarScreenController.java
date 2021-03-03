@@ -7,7 +7,7 @@ package ViewControllers;
 
 import Model.Appointment;
 import Model.Customer;
-import Model.Inventory;
+//import Model.Inventory;
 
 import java.io.IOException;
 import java.net.URL;
